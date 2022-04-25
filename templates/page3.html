@@ -1,1 +1,22 @@
+{% extends "layout.html" %}
 
+{% block title %}{% endblock %}
+
+{% block content %}
+  <h1>Results:</h1>
+
+<ul>
+ <li> Your first name is: {{ session['firstName'] }} </li>
+ <li> Your last name is: {{ session['lastName'] }} </li>
+ <li> You chose this definition for "verity": {{ session['basicMath'] }} </li>
+</ul>
+
+<br> <br>
+   <h1>Answer Key:</h1>
+<ul>
+  <li> Your first name is: fname </li>
+  <li> Your last name is: lname </li>
+  <li> The definition of "verit" is: conformity to reality or actuality </li>
+
+
+{% endblock %}

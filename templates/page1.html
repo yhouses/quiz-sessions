@@ -1,1 +1,18 @@
+{% extends "layout.html" %}
 
+{% block title %}{% endblock %}
+
+{% block content %}
+  <h1>What is your name?</h1>
+
+ <form action={{ url_for("renderPage2") }} method="POST">
+  User's First Name:<br>
+  <input type="text" name="firstName">
+  <br>
+  User's Last Name:<br>
+  <input type="text" name="lastName">
+  <input type="submit" value="Submit">
+ </form> 
+<br><br>
+
+{% endblock %}

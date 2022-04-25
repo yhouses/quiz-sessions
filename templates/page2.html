@@ -1,1 +1,21 @@
+{% extends "layout.html" %}
 
+{% block title %}{% endblock %}
+
+{% block content %}
+  <h1>What is the definition of "verity"?</h1>
+
+ <form action={{ url_for("renderPage3") }} method="POST">
+  Definitions:<br>
+  <select name="definitions" id="definitions" multiple>
+  <br>
+    <option value="def1">conformity to reality or actuality</option>
+    <option value="def2">not in keeping with accepted standards of what is proper</option>
+    <option value="def3">dignified and somber in manner or character</option>
+  </select>
+  <input type="submit" value="Submit" name="wordDef">
+ </form> 
+
+<br><br>
+
+{% endblock %}
